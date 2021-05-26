@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="ejercitacionphp3.css" />
+	
+    <title>Compañía telefónica</title>
+</head>
+
+<body>
+    <div class="cabecera">
+        <h1>Compañía telefónica</h1>
+    </div>
+
+    <h2>Calcule cuanto le cuesta la llamada completando este formulario</h2>
+    <form action="opera3.php" method="post">
+  
+        <!--input type  -->
+        <div class="input">
+         <h4>Ingrese aquí cuantos minutos duró la llamada:</h4>
+         <input type="number" name="minutos" id="minutos">
+        <br>
+        <h4>Indique aquí el día en el que realizó la llamada:</h4>
+        <select name="dia">
+            <br>
+          <option value = "Lunes">Lunes</option>
+          <option value = "Martes">Martes</option>
+          <option value = "Miercóles">Miércoles</option>
+          <option value = "Jueves">Jueves</option>
+          <option value = "Viernes">Viernes</option>
+          <option value = "Sábado">Sábado</option>
+          <option value = "Domingo">Domingo</option>
+        </select>
+          <br>
+        <br>
+
+        <h4>Si usted no realizó la llamada un domingo,
+            indique en que turno la hizó</h4>
+        <select name="turno">
+            <br>
+          <option value = "Mañana">Mañana</option>
+          <option value = "Tarde">Tarde</option>
+        </select>
+          <br>
+        </div>
+       
+        <!--botón  -->
+        
+        <input type="submit" value="Calcular">
+    </form>
+
+</body>
+</html>
